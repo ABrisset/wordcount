@@ -35,7 +35,6 @@ class Wordcount < Sinatra::Base
   
   get '/' do
     slim :index
-
   end
 
   post '/result' do
