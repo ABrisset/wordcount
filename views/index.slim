@@ -1,0 +1,16 @@
+doctype html
+html
+  head 
+  	link rel="stylesheet" href="/css/style.css" type="text/css"
+  body
+  	div
+  		h1 Compteur de mots
+	    form action="/result" method="post"
+	      textarea name="text_to_count" id="text"
+	      input type="submit" value="valider"
+		- if @final_count
+		  p id="result"
+		  	' Votre texte contient
+		  	span
+		  		'#{@final_count}
+		  	' mot(s)

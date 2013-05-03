@@ -1,0 +1,2 @@
+require './wordcount'
+run Wordcount
